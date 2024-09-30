@@ -1,0 +1,304 @@
+@use "../abstract/variable" as var;
+@use "../abstract/functions" as func;
+@use "../abstract/mixins";
+
+.fantasy-view-book{
+    width:85%;
+    height:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:initial;
+    flex-flow:row wrap;
+    margin:130px auto 0px;
+    // animation:viewbookanimation 12s linear infinite;
+    //xs
+    @include mixins.responsive(xs){
+        width:95%;
+        margin:90px auto 0;
+        align-items:center;
+        justify-content:center;
+    }
+    //sm
+    @include mixins.responsive(sm){
+        width:100%;
+        margin:90px auto 0;
+        padding:0 3%;
+        justify-content:center;
+        gap:50px;
+    }
+    //lg
+    @include mixins.responsive(lg){
+        align-items:initial;
+        justify-content:space-between;
+        flex-flow:row nowrap;
+        padding:0 4%;
+    }
+    //xlg
+    @include mixins.responsive(xlg){
+        width:85%;
+        padding:0;
+        margin:130px auto 0;
+    }
+    &-img{
+        width:240px;
+        height:360px;
+        overflow:hidden;
+        border-radius:5px;
+        //xs
+    @include mixins.responsive(xs){
+        width:200px;
+        height:300px;
+    }
+     //lg
+     @include mixins.responsive(lg){
+        width:240px;
+        height:360px;
+    }
+        img{
+            width:100%;
+            height:100%;
+            object-fit:cover;
+        }
+    }
+    &-content{
+        width:390px;
+        height:auto;
+        display:flex;
+        flex-flow:column nowrap;
+        align-items:initial;
+        padding:0px 0px;
+        //xs
+        @include mixins.responsive(xs){
+            padding:35px 0px 0px 0px;
+            align-items:center;
+        }
+        h3{
+            font-size:16px;
+            font-weight:600;
+            text-transform:uppercase;
+            color:func.theme-colors('secondary');
+        }
+        h2{
+            font-size:20px;
+            font-weight:700;
+            text-transform:capitalize;
+            margin-top:10px;
+            color:func.theme-colors('primary');
+        }
+        h4{
+            font-size:12px;
+            font-weight:600;
+            text-transform:capitalize;
+            margin-top:8px;
+            color:func.theme-colors('purple');
+        }
+        .rating{
+            display:flex;
+            flex-flow:row nowrap;
+            align-items:center;
+            margin-top:12px;
+            img{
+                width:100px;
+                height:20px;
+            }
+            span{
+                font-size:10px;
+                font-weight:500;
+                color:func.theme-colors('greenish');
+                margin-left:10px;
+            }
+        }
+        .specify{
+            display:flex;
+            flex-flow:row nowrap;
+            align-items:center;
+            margin-top:15px;
+            h5{
+            font-size:14px;
+            font-weight:500;
+            text-transform:capitalize;
+            padding-right:10px;
+            color:func.theme-colors('black');
+            }
+            h6{
+            font-size:14px;
+            font-weight:500;
+            text-transform:capitalize;
+            color:func.theme-colors('black');
+            padding-left:10px;
+            border-left:3px solid func.theme-colors('black');
+            }
+        }
+        .social-icons{
+            display:flex;
+            flex-flow:row nowrap;
+            align-items:center;
+            margin-top:18px;
+            img{
+                width:25px;
+                height:25px;
+                margin-right:12px;
+            }
+        }
+        .special{
+            font-size:12px;
+            font-weight:600;
+            text-transform:uppercase;
+            color:func.theme-colors('inkblue');
+            margin-top:15px;
+            letter-spacing: 0.05rem;
+        }
+        p{
+            font-size:12px;
+            font-weight:600;
+            color:func.theme-colors('dark');
+            margin-top:15px;
+            line-height:1.8;
+            border-bottom:2px solid func.theme-colors('primary-hover');
+            padding-bottom:20px;
+            //xs
+            @include mixins.responsive(xs){
+                margin:15px 10px 0px 15px;
+            }
+            a{
+                color:func.theme-colors('purple');
+            }
+        }
+        .other-details{
+            display:flex;
+            flex-flow:row nowrap;
+            align-items:center;
+            justify-content:space-between;
+            padding:20px 0;
+            //xs
+            @include mixins.responsive(xs){
+               align-items:initial;
+               flex-flow:column nowrap;
+               padding:40px 0;
+            }
+            //sm
+            @include mixins.responsive(sm){
+                padding:20px 0 0;
+             }
+             //xlg
+             @include mixins.responsive(xlg){
+                padding:20px 0;
+             }
+            &-left{
+                   display:flex;
+                   flex-flow:column nowrap;
+                   align-items:initial;
+                   li{
+                    font-size:12px;
+                    font-weight:600;
+                    margin-bottom:12px;
+                    text-transform:capitalize;
+                    color:func.theme-colors('inkblue');
+                    //xs
+            @include mixins.responsive(xs){
+                margin-bottom:15px;
+             }
+                   }
+            }
+            &-right{
+                display:flex;
+                flex-flow:column nowrap;
+                align-items:initial;
+                margin-left:35px;
+                //xs
+                @include mixins.responsive(xs){
+                    margin-left:0;
+                }
+                li{
+                 font-size:12px;
+                 font-weight:600;
+                 margin-bottom:12px;
+                 text-transform:capitalize;
+                 color:func.theme-colors('inkblue');
+                 //xs
+                 @include mixins.responsive(xs){
+                   margin-bottom:15px;
+                   &:nth-child(3){
+                    margin-bottom:0px;
+                    }
+                 }
+                }     
+         }
+        }
+    }
+    &-card{
+        width:310px;
+        height:420px;
+        border-radius:5px;
+        background:func.theme-colors('grey');
+        display:flex;
+        flex-flow:column nowrap;
+        padding:25px 20px;
+        //xs
+        @include mixins.responsive(xs)
+        {
+          width:290px;
+          height:410px;
+          padding:25px 10px;
+        }
+       .online-price{
+            display:flex;
+            flex-flow:row nowrap;
+            justify-content:space-between;
+            align-items:center;
+            h3{
+                font-size:16px;
+                font-weight:600;
+                color:func.theme-colors('purple');
+            }
+            h5{
+                font-size:14px;
+                font-weight:500;
+                color:func.theme-colors('primary-hover');
+                text-transform:capitalize;
+            }
+        }
+        .member-price{
+            display:flex;
+            flex-flow:row nowrap;
+            justify-content:space-between;
+            align-items:center;
+            margin-top:10px;
+            border-bottom:2px solid black;
+                padding-bottom:25px;
+            h3{
+                font-size:16px;
+                font-weight:600;
+                color:func.theme-colors('purple');
+            }
+            h5{
+                font-size:14px;
+                font-weight:500;
+                color:func.theme-colors('primary-hover');
+                text-transform:capitalize;
+            }
+        }
+        .order{
+            display:flex;
+            flex-flow:column nowrap;
+            gap:20px;
+            margin-top:25px;
+            h4>span{
+                font-size:12px;
+                font-weight:600;
+                text-transform:capitalize;
+                margin:0px 0px 20px 15px;
+                color:func.theme-colors('inkblue');
+            }
+        }
+        .view-books-buttons{
+            display:flex;
+            flex-flow:column nowrap;
+            margin-top:35px;  
+            //xs
+            @include mixins.responsive(xs){
+                margin-top:15px;
+            }  
+        }
+    }
+}

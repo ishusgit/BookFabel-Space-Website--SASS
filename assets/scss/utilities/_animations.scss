@@ -1,0 +1,180 @@
+@use '../abstract/variable' as var;
+@use '../abstract/functions' as func;
+
+
+//herosection-title-colorchange animation
+@keyframes color-change {
+    0%{
+        color:func.theme-colors('primary');
+    }
+    30%{
+        color:func.theme-colors('violet');
+    }
+    65%{
+        color:func.theme-colors('sky');
+    }
+    85%{
+        color:func.theme-colors('orangered');
+    }
+    100%{
+        color:func.theme-colors('primary');
+    }
+}
+//border animation
+@keyframes spin{
+    from{
+        transform:rotate(0deg);
+    }
+    to{
+        transform:rotate(360deg);
+    }
+}
+//scroll animation (block div)
+@keyframes appear{
+    from{
+        opacity:0;
+        scale:0.4;
+    }
+    to{
+        opacity:1;
+        scale:1;
+    }
+}
+//sidebar animation
+@keyframes sidebaranimation{
+    0%{
+        transform:translateX(-200px);
+    }
+    100%{
+        transform:translateX(0);
+    }
+}
+//herosection animation
+@keyframes herosectionanimation{
+    0%{
+        transform:translateX(200px);
+    }
+    100%{
+        transform:translateX(0);
+    }
+}
+
+
+
+
+
+
+
+
+// @keyframes supercollectionanimation{
+//     0%{
+//         transform: translateX(-200px);
+//     }
+//     100%{
+//         transform: translateX(0);
+//     }
+// }
+// @keyframes educationbanneranimation{
+//     0%{
+//         transform: translateX(200px);
+//     }
+//     100%{
+//         transform: translateX(0);
+//     }
+// }
+// @keyframes educationanimation{
+//     0%{
+//         transform: translateX(-200px);
+//     }
+//     100%{
+//         transform: translateX(0);
+//     }
+// }
+// @keyframes popularanimation{
+//     0%{
+//         transform: translateX(200px);
+//     }
+//     100%{
+//         transform: translateX(0);
+//     }
+// }
+// @keyframes offeranimation{
+//     0%{
+//         transform: translateX(-200px);
+//     }
+//     100%{
+//         transform: translateX(0);
+//     }
+// }
+// @keyframes businessbanneranimation{
+//     0%{
+//         transform: translateX(200px);
+//     }
+//     100%{
+//         transform: translateX(0);
+//     }
+// }
+// @keyframes fantasyanimation{
+//     0%{
+//         transform: translateX(-200px);
+//     }
+//     100%{
+//         transform: translateX(0);
+//     }
+// }
+// @keyframes businessanimation{
+//     0%{
+//         transform: translateX(200px);
+//     }
+//     100%{
+//         transform: translateX(0);
+//     }
+// }
+// @keyframes genreanimation{
+//     0%{
+//         transform: translateX(-200px);
+//     }
+//     100%{
+//         transform: translateX(0);
+//     }
+// }
+// @keyframes aboutanimation{
+//     0%{
+//         transform: translateX(200px);
+//     }
+//     100%{
+//         transform: translateX(0);
+//     }
+// }
+// @keyframes viewbookanimation{
+//     0%{
+//         transform: translateX(-200px);
+//     }
+//     100%{
+//         transform: translateX(0);
+//     }
+// }
+// @keyframes customeranimation{
+//     0%{
+//         transform: translateX(200px);
+//     }
+//     100%{
+//         transform: translateX(0);
+//     }
+// }
+// @keyframes contactanimation{
+//     0%{
+//         transform: translateX(-200px);
+//     }
+//     100%{
+//         transform: translateX(0);
+//     }
+// }
+// @keyframes footeranimation{
+//     0%{
+//         transform: translateX(200px);
+//     }
+//     100%{
+//         transform: translateX(0);
+//     }
+// }

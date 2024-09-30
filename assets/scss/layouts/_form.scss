@@ -1,0 +1,70 @@
+@use "../abstract/variable" as var;
+@use "../abstract/functions" as func;
+@use "../abstract/mixins";
+    .form{
+        margin-top:40px;
+        .name{
+            .form-control{
+                padding:12px 10px;
+                border:none;
+                outline:none;
+                text-align:start;
+                flex:1;
+                width: 100%;
+                background:func.theme-colors('white');
+                box-shadow:4px 4px 7px rgba(0,0,0,0.04);
+                border-radius:10px;
+                &::placeholder{
+                    color:func.theme-colors('dark');
+                    font-weight:300;
+                    font-size:12px;
+                }
+            }
+        }
+        .email{
+            margin-top:20px;
+            .form-control{
+                padding:12px 10px;
+                border:none;
+                outline:none;
+                text-align:start;
+                flex:1;
+                width: 100%;
+                background:func.theme-colors('white');
+                box-shadow:4px 4px 7px rgba(0,0,0,0.04);
+                border-radius:10px;
+                &::placeholder{
+                    color:func.theme-colors('dark');
+                    font-weight:300;
+                    font-size:12px;
+                }
+            }
+        }
+        .textarea{
+            margin-top:20px;
+            display:block;
+            .form-control{
+                padding:10px;
+                border:none;
+                outline:none;
+                text-align:start;
+                display:block;
+                width: 100%;
+                background:func.theme-colors('white');
+                box-shadow:4px 4px 7px rgba(0,0,0,0.04);
+                border-radius:10px;
+                font-size: 12px;
+                font-weight: 300;
+                resize: none;
+               
+                //xs
+                @include mixins.responsive(xs){
+                    display: block;
+                    &:placeholder{
+                     margin-left:0;
+                    }
+                }
+            }
+        }
+    }
+  

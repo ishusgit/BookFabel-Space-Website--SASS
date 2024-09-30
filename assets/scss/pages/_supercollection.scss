@@ -1,0 +1,242 @@
+@use '../abstract/variable' as var;
+@use '../abstract/functions' as func;
+@use "../abstract/mixins";
+
+.supercollectionbooks{
+    display:flex;
+    flex-flow:column nowrap;
+    margin:90px auto 0px;
+    width:90%;
+    // animation:supercollectionanimation 2s linear;
+//xs
+    @include mixins.responsive(xs){
+        margin:70px auto 0px;
+        width:100%;
+    }
+    //sm
+    @include mixins.responsive(sm){
+        margin:70px auto 0px;
+    }
+    //md
+    @include mixins.responsive(md){
+        width:95%;
+    }
+    //lg
+    @include mixins.responsive(lg){
+        width:97%;
+    }
+    //xlg
+    @include mixins.responsive(xlg){
+        width:90%;
+    }
+    &-cards{
+        display:flex;
+        flex-flow:row wrap;
+        justify-content:space-between;
+        align-items:center;
+        padding:30px 0px;
+        margin:20px 0px;
+//xs
+        @include mixins.responsive(xs){
+            padding:30px 10px;
+            gap:35px;
+            justify-content: center;
+        }
+//sm
+@include mixins.responsive(sm){
+    padding:30px 10px;
+    gap:40px;
+    justify-content:center;
+}
+//md
+@include mixins.responsive(md){
+    padding:30px 10px;
+    gap:40px;
+    justify-content:space-around;
+    align-items:initial;
+}
+//lg
+@include mixins.responsive(lg){
+    gap:10px;
+    padding:30px 0px 30px 6px;
+    justify-content:space-between;
+    flex-flow:row nowrap;
+    align-items:center;
+}
+//xlg
+@include mixins.responsive(xlg){
+    gap:0px;
+    padding:30px 0px;
+    justify-content:space-between;
+    margin:20px 0px;
+}
+        &--card{
+            display:flex;
+            flex-flow:row nowrap;
+            justify-content:start;
+            width:330px;
+            margin:0 auto;
+            height:auto;
+            //xs
+            @include mixins.responsive(xs){
+                width:300px;
+                justify-content:center;
+            }
+        //    //sm
+           @include mixins.responsive(sm){
+            width:450px;
+            justify-content:center;
+        }
+        //md
+        @include mixins.responsive(md){
+            width:335px;
+            justify-content:start;
+        }
+        //lg
+        @include mixins.responsive(lg){
+            width:325px;
+            justify-content:start;
+        }
+        //xlg
+        @include mixins.responsive(xlg){
+            width:330px;
+        }
+            &--img{
+                width:110px;
+                height:180px;
+                border-radius:5px;
+                overflow:hidden;
+                   //sm
+           @include mixins.responsive(sm){
+            width:130px;
+            height:200px;
+        }
+         //xlg
+         @include mixins.responsive(xlg){
+            width:110px;
+            height:180px;
+        }
+                img{
+                    width:100%;
+                    object-fit:cover;
+                    height:100%;
+                }
+            }
+            &--imgs{
+                width:110px;
+                height:180px;
+                overflow:hidden;
+                border-radius:5px;
+                //xs
+                @include mixins.responsive(xs){
+                    width:105px;
+                }
+                //sm
+                @include mixins.responsive(sm){
+                    width:130px;
+                    height:190px;
+                    }
+                    //lg
+                    @include mixins.responsive(lg){
+                        height:200px;
+                        }
+                        //xlg
+                    @include mixins.responsive(xlg){
+                        height:180px;
+                        width:110px;
+                        }
+                img{
+                    width:100%;
+                    height:100%;
+                    object-fit:cover;
+                }
+            }
+            &--imgss{
+                width:130px;
+                height:180px;
+                border-radius:5px;
+                //xs
+                @include mixins.responsive(xs){
+                    width:100px; 
+                }
+            //    //sm
+                @include mixins.responsive(sm){
+                width:150px;
+                height:200px;
+                }
+                //md
+                @include mixins.responsive(md){
+                    width:130px;
+                    height:180px;
+                }
+                //lg
+                @include mixins.responsive(lg){
+                    width:130px;
+                    height:200px;
+                }
+                //xlg
+                @include mixins.responsive(xlg){
+                    width:130px;
+                    height:180px;
+                }
+                img{
+                    width:100%;
+                    height:100%;
+                    object-fit:cover;
+                }
+
+            }
+
+            &--content{
+                display:flex;
+                flex-flow:column nowrap;
+                padding:0 18px;
+                //xs
+                @include mixins.responsive(xs){
+                    padding:0 10px 0 20px;
+                }
+                //sm
+                @include mixins.responsive(sm){
+                    padding:0 10px 0 30px;
+                }
+                //md
+                @include mixins.responsive(md){
+                    padding:0 10px 0 20px;
+                }
+                //xlg
+                @include mixins.responsive(xlg){
+                    padding:0 18px;
+                }
+                &__first{
+                    display:flex;
+                    flex-flow:row nowrap;
+                    align-items:initial;
+                }
+
+                &__second{
+                    display:flex;
+                    flex-flow:column nowrap;
+                    margin-top:25px;
+
+                    &__bookname{
+                        font-size:16px;
+                        font-weight:600;
+                        font-family:var.$font-primary;
+                        color:func.theme-colors('secondary');
+                        text-transform:capitalize;
+                        text-wrap: nowrap;
+                    }
+                    &__author{
+                        font-size:14px;
+                        font-weight:400;
+                        font-family:var.$font-primary;
+                        color:func.theme-colors('light');
+                        text-transform:capitalize;
+                        margin-top:10px;
+                    }
+                }
+            }
+        }
+    }
+
+}

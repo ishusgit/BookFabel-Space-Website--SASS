@@ -1,0 +1,47 @@
+@use '../abstract/variable' as var;
+@use '../abstract/functions' as func;
+
+.badge{
+    width:30px;
+    height:30px;
+    align-items:center;
+    justify-content:center;
+    text-transform:capitalize;
+    display:flex;
+    font-size:10px;
+    font-weight:500;
+    border-radius:30px;
+    background:func.theme-colors('four');
+    color:func.theme-colors('black');
+   }
+   .badge-primary{
+    @extend .badge;
+    background:func.theme-colors('secondary');
+    color:func.theme-colors('white');
+   }
+   .badge-secondary{
+    @extend .badge;
+    background:func.theme-colors('yellow');
+   }
+   .badge-offer{
+    @extend .badge;
+    width:auto;
+    height:auto;
+    padding:3px 12px;
+    text-align:center;
+    font-size:12px;
+    background:func.theme-colors('primary-hover');
+    color:func.theme-colors('skyish');
+   }
+   .badge-offers{
+    @extend .badge;
+    @extend .badge-offer;
+    background:func.theme-colors('third');
+    color:func.theme-colors('primary');
+    border-radius:5px;
+   }
+   .badge-cart{
+    @extend .badge;
+    @extend .badge-primary;
+    background:func.theme-colors('primary');
+   }

@@ -1,0 +1,117 @@
+@use "./abstract/variable" as var;
+@use "./abstract/functions" as func;
+
+//genre book before styling
+.genre-card{
+    background-image:url('/assets/images/genere-books/game\ book.jpg');
+    position:relative;
+    &::before{
+        position:absolute;
+        content:'';
+        width:100%;
+        height:100%;
+        top:0;
+        left:0;
+        z-index:-1;
+        background-color: rgba(255, 103, 169, 0.815);
+    }
+}
+
+.genre-card-1{
+    background-image:url('/assets/images/genere-books/adventure\ book.jpg');
+    position:relative;
+    &::before{
+        position:absolute;
+        content:'';
+        width:100%;
+        height:100%;
+        top:0;
+        left:0;
+        z-index:-1;
+        background-color: rgba(216, 37, 1, 0.815);
+    }
+}
+
+.genre-card-2{
+    background-image:url('/assets/images/genere-books/game-1\ book.jpg');
+    position:relative;
+    &::before{
+        position:absolute;
+        content:'';
+        width:100%;
+        height:100%;
+        top:0;
+        left:0;
+        z-index:-1;
+        background-color: rgba(0, 82, 33, 0.815);
+    }
+}
+
+.block{
+    animation:appear 5s linear;
+    animation-timeline:view();
+    animation-range:entry 0% cover 40%;
+}
+
+.back-to-top-circle{
+    position:fixed;
+    z-index:20000;
+    bottom:20px;
+    right:20px;
+    width:50px;
+    height:50px;
+    border-radius:50%;
+    color:white;
+    border:none;
+    outline:none;
+    background:func.theme-colors('primary');
+    text-align:center;
+    opacity:0;
+    cursor:pointer;
+    transition: all 0.6s ease-in-out;
+    &:hover{
+       background:rgb(249, 3, 44);
+       transform: translateY(-9px);
+}
+}
+.show{
+    opacity:1;
+}
+
+
+//layout folder
+@import "./layouts/sidebar" ;
+@import "./layouts/header";
+@import "./layouts/mainsection";
+@import "./layouts/form";
+@import "./layouts/footer";
+
+// base folder
+@import "./base/reset";
+@import "./base/global";
+
+// utility folder
+@import "./utilities/animations";
+
+// components folder
+@import "./components/buttons";
+@import "./components/banners";
+@import "./components/badge";
+
+//pages folder
+@import "./pages/supercollection";
+@import "./pages/education";
+@import "./pages/popular";
+@import "./pages/offers";
+@import "./pages/fantasy";
+@import "./pages/business";
+@import "./pages/genre";
+@import "./pages/about";
+@import "./pages/view-books";
+@import "./pages/customer-reviews";
+@import "./pages/contact-us";
+
+//abstract folder
+@import "./abstract/variable";
+@import "./abstract/functions";
+@import "./abstract/mixins";

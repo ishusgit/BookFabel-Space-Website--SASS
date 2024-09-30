@@ -1,0 +1,321 @@
+@use "../abstract/variable" as var;
+@use "../abstract/functions" as func;
+@use "../abstract/mixins" as mixins;
+.main-part{
+    display:flex;
+  justify-content:space-between;
+  position:relative;
+  flex-flow:row wrap;
+  border-radius:20px;
+  margin:0 auto;
+  padding:20px 23px;
+  height:90vh;
+  width:100%;
+  background:linear-gradient(to left bottom,func.theme-colors('primary'), func.theme-colors('secondary'));
+ //xs
+  @include mixins.responsive(xs){
+      display:flex;
+      flex-flow:column nowrap;
+      justify-content:start;
+      height:100%;
+      width:100%;
+      border-radius:0px;
+      padding:50px 10px 30px;
+  }
+  //sm
+  @include mixins.responsive(sm){
+    flex-flow:row nowrap;
+    height:100vh;
+    padding:20px 0px 20px 10px;
+    border-radius:0px;
+  }
+  //xlg
+  @include mixins.responsive(xlg){
+    flex-flow:row nowrap;
+    height:90vh;
+    padding:20px 23px;
+    border-radius:20px;
+  }
+  &--hero-section{
+    background:func.theme-colors('offwhite');
+    border-radius:20px;
+    display:flex;
+    flex-flow:column nowrap;
+    width:80%;
+    height:100%;
+    padding:30px 10px;
+    position:relative;
+    animation:herosectionanimation 1.8s linear;
+//xs
+    @include mixins.responsive(xs)
+    {
+      width:96%;
+      height:auto;
+      padding:20px 0px;
+      margin:50px auto 0px;
+      display:flex;
+      flex-flow:column nowrap;
+      border-radius:10px;
+    }
+//sm
+@include mixins.responsive(sm){
+  width:65%;
+  border-radius:5px 0px 0px 5px;
+}
+//md
+@include mixins.responsive(md){
+  width:74%;
+  padding:0 0 0 10px;
+}
+//lg
+@include mixins.responsive(lg){
+  width:79%;
+  padding:0 30px;
+}
+//xlg
+@include mixins.responsive(xlg){
+  width:80%;
+  padding:30px 10px;
+  border-radius:20px;
+}
+    &--second{
+      display:flex;
+      flex-flow:row wrap;
+      justify-content:space-around;
+      padding:50px 5px;
+      align-items:center;
+      max-width:100%;
+      width:100%;
+      height:auto;
+      margin:auto;
+//xs
+      @include mixins.responsive(xs){
+        display:flex;
+        flex-flow:column nowrap;
+        justify-content:center;
+        padding:10px 5px;
+        align-items:center;
+        width:100%;
+      }
+  //md
+  @include mixins.responsive(md){
+    // border:1px solid red;
+    flex-flow:row nowrap;
+    padding:30px 0;
+  }
+   //xlg
+   @include mixins.responsive(xlg){
+    // border:1px solid red;
+    flex-flow:row nowrap;
+    padding:50px 5px;
+  }
+      &__img{
+        width:50%;
+        object-fit: cover;
+       min-width:400px;
+       height:auto;
+       //xs
+        @include mixins.responsive(xs){
+          width:100%;
+          min-width:350px;
+        }
+        // sm
+        @include mixins.responsive(sm){
+          width:350px;
+          min-width:350px;
+          height:300px;
+        }
+        // md
+        @include mixins.responsive(md){
+          width:300px;
+          min-width:250px;
+          max-width:350px;
+          height:250px;
+        }
+        // lg
+        @include mixins.responsive(lg){
+          width:50%;
+         min-width:400px;
+         height:auto;
+        }
+        img{
+          //xs
+          @include mixins.responsive(xs){
+            width:100%;
+            object-fit: cover;
+            height:100%;
+          }
+           //sm
+           @include mixins.responsive(sm){
+            width:100%;
+            object-fit: cover;
+            height:100%;
+          }
+        }
+      }
+  
+      &__content{
+        display:flex;
+        flex-flow:column nowrap;
+        width:50%;
+        padding:0 30px;
+//xs
+        @include mixins.responsive(xs){
+            width:95%;
+            padding:20px 10px;
+        }
+        //sm
+        @include mixins.responsive(sm){
+          display:none;
+      }
+       //md
+       @include mixins.responsive(md){
+        display:flex;
+        width:70%;
+        padding:0px 10px 0px 20px;
+    }
+     //lg
+     @include mixins.responsive(lg){
+      display:flex;
+      flex-flow:column nowrap;
+      width:50%;
+      padding:0 0px;
+  }
+   //xlg
+   @include mixins.responsive(xlg){
+    padding:0 30px;
+}
+        &__heading{
+          font-size:28px;
+          font-weight:700;
+          text-transform:capitalize;
+          font-family:var.$font-primary;
+          letter-spacing:0.02rem;
+          color:func.theme-colors('secondary');
+          transition:200s;
+          line-height: 1.8;
+//xs
+          @include mixins.responsive(xs){
+            text-align:center;
+            font-size:24px;
+           font-weight:700;
+          }
+          //md
+          @include mixins.responsive(md){
+            text-align:center;
+            font-size:24px;
+           font-weight:700;
+          }
+          //xlg
+          @include mixins.responsive(xlg){
+            text-align:start;
+            font-size:28px;
+           font-weight:700;
+          }
+        }
+  
+        &__para{
+          font-size:14px;
+          font-weight:500;
+          line-height:1.8;
+          color:func.theme-colors('secondary');
+          margin-top:15px;
+          max-width:450px;
+          //xs
+          @include mixins.responsive(xs){
+            margin:15px auto 0px;
+            font-size:12px;
+            font-weight:500;
+            text-justify: center;
+          }
+           //md
+           @include mixins.responsive(md){
+            margin:15px auto 0px;
+            font-size:12px;
+            font-weight:500;
+            text-justify: center;
+          }
+          //xlg
+          @include mixins.responsive(xlg){
+            margin:15px 0;
+            font-size:14px;
+            font-weight:500;
+            text-justify:start;
+          }
+        }
+  
+        &__buttons{
+          display:flex;
+          flex-flow:row nowrap;
+          margin:20px 0;
+          position:relative;
+          //xs
+          @include mixins.responsive(xs){
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            margin:25px 0 0px;
+          }
+          //md
+          @include mixins.responsive(md){
+            justify-content:center;
+            align-items:center;
+            margin:25px 0 0px;
+          }
+           //xlg
+           @include mixins.responsive(xlg){
+            justify-content:start;
+            align-items:start;
+            margin:20px 0px;
+          }
+        }
+        
+        &__socialicons{
+          display:flex;
+          flex-flow:row nowrap;
+          align-items:center;
+          margin:10px 0;
+          //xs
+          @include mixins.responsive(xs){
+            margin:30px 0px 0;
+            justify-content:center;
+          }
+            //md
+          @include mixins.responsive(md){
+            margin:30px 0px 0;
+            justify-content:center;
+          }
+          //xlg
+          @include mixins.responsive(xlg){
+            margin:10px 0;
+            justify-content:start;
+          }
+          img{
+            width:35px;
+            height:35px;
+            margin-left:15px;
+            //xs
+            @include mixins.responsive(xs){
+              &:nth-child(1){
+                margin-left:0;
+              }
+            }
+            //md
+            @include mixins.responsive(md){
+              &:nth-child(1){
+                margin-left:0;
+              }
+            }
+             //xlg
+             @include mixins.responsive(xlg){
+              &:nth-child(1){
+                margin-left:15px;
+              }
+            }
+          }
+          
+        }
+      }
+    }
+  }
+}

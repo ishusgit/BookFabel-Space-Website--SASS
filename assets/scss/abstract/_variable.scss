@@ -1,0 +1,50 @@
+//variables
+
+//font-family
+$font-primary:"Poppins", sans-serif;
+$font-secondary:"Roboto", sans-serif;
+$font-third:"Mukta Malar", sans-serif;
+$font-lobster: "Lobster", sans-serif;
+$font-cursive: "Cedarville Cursive", cursive;
+
+
+
+//colors
+
+$theme-colors:(
+ 'primary':#ff3e9d,
+ 'primary-hover':#112d60, 
+ 'secondary':#0e1f40,
+ 'purple':rgba(78, 1, 72, 0.95),
+ 'third':pink,
+ 'pinkish':rgb(247, 244, 255),
+ 'blue':rgb(106, 106, 213),
+ 'light-purple':rgb(212, 162, 255),
+ 'very-light-purple':rgb(248, 239, 255),
+ 'four':#dd83e0,
+ 'yellow':#f9e866,
+ 'darkyellow':#ffae00,
+ 'green':rgba(34, 217, 34, 0.82),
+ 'greenish':darkgreen,
+ 'grey':rgb(255, 244, 249),
+ 'brown':#561139,
+ 'brownish':#871427cb,
+ 'skyish':#38a2d7,
+ 'sky':#0c7bb3,
+ 'violet':#9600ff,
+ 'vio-v':#cf8cff,
+ "vio-v-l":#e0cbda,
+ 'lightviolet':rgb(215, 160, 243),
+ 'greenishblue':#63acb0,
+ 'inkblue':#1d3679,
+ 'inkblueish':#375ab8,
+ 'lightblue':#a0b3ff,
+ 'greenishwhite':#18a5a7,
+ 'orangered':#f03a3a,
+ 'black':black,
+ 'offblack':rgba(0, 0, 0, 0.525),
+ 'dark':rgb(44, 44, 44),
+ 'white':rgb(255, 255, 255),
+ 'light':rgb(32, 32, 32),
+ 'offwhite':rgba(255, 255, 255, 0.893),
+);

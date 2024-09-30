@@ -1,0 +1,52 @@
+//max-width 575px ie, <576 -->xs
+//min-width 576px ie, >-576 -->sm
+//min-width 768px -->md
+//min-width 992px -->lg
+//min-width 1200px -->xlg
+//min-width 1400px -->xxlg
+
+@mixin responsive($breakpoint){
+    @if $breakpoint == xs{
+        //x-small devices(potrait phones, less then 576px) (xs)
+
+        @media only screen and (max-width:576px) 
+        {
+            @content;
+        }
+    }
+     @else if $breakpoint == sm{
+        //small devices (landscape phones, 576px and up)
+
+        @media only screen and (min-width:576px){
+            @content;
+        }
+    } 
+    @else if $breakpoint == md{
+        //medium devices (tablets, 768px and up)
+
+        @media only screen and (min-width:768px){
+            @content;
+        }
+    }
+    @else if $breakpoint == lg{
+        //large devices (desktops, 992px and up)
+
+        @media only screen and (min-width:992px){
+            @content;
+        }
+    }
+    @else if $breakpoint == xlg{
+        //extra large devices (large desktops, 1200px and up)
+
+        @media only screen and (min-width:1200px){
+            @content;     
+    }
+}
+@else if $breakpoint == xxlg{
+    //extra extra large devices (large desktops, 1400px and up)
+
+    @media only screen and (min-width:1400px){
+        @content;     
+}
+}
+}

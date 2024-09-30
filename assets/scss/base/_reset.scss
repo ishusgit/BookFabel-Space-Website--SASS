@@ -1,0 +1,34 @@
+@use '../abstract/variable' as var;
+@use '../abstract/functions' as func;
+@use "../abstract/mixins" as mixins;
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:var.$font-primary;
+}
+body,html{
+    padding:10px 0;
+    max-width:100vw;
+    min-height:100vh;
+    position:relative;
+    //xs
+    @include mixins.responsive(xs){
+        padding:0;
+    }
+    //sm
+    @include mixins.responsive(sm){
+        padding:0;
+    }
+    //xlg
+    @include mixins.responsive(xlg){
+        padding:10px 0;
+    }
+}
+a{
+    text-decoration:none;
+    color:func.theme-colors('white');
+}
+li{
+    list-style-type: none;
+}

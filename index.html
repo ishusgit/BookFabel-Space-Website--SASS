@@ -1,0 +1,933 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book World - SASS</title>
+    <link rel="shortcut icon" href="./assets/images/books-logos/main-logo.png" type="image/x-icon">
+
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/f5d6705a2e.js" crossorigin="anonymous"></script>
+    <!-- links -->
+     <link rel="stylesheet" href="./assets/css/main.css">
+
+     <!-- end links -->
+</head>
+<body>
+<!-- <div class="card">
+    clear it
+</div> -->
+       <!-- header with hero section -->
+<section class="main-part" id="main-part">
+    <!-- sidebar menu -->
+     <div class="main-part--sidebar">
+        <div class="main-part--sidebar--logo">
+        <a href="index.html"><h2 class="font-head">BookFable Space</h2></a>
+        <img src="./assets/images/books-logos/main-logo.png" alt="books-world logo" width="30px" height="auto"> 
+        </div>
+     <nav>
+        <ul class="main-part--sidebar--menu">
+            <li class="main-part--sidebar--menu__item active">
+                <a href="#supercollectionbooks" class="main-part--sidebar--menu__item__link">Super Collection</a>
+            </li>
+            <li class="main-part--sidebar--menu__item">
+                <a href="#education-books" class="main-part--sidebar--menu__item__link">education books</a>
+            </li>
+            <li class="main-part--sidebar--menu__item">
+                <a href="#popular-books" class="main-part--sidebar--menu__item__link">popular books</a>
+            </li>
+            <li class="main-part--sidebar--menu__item">
+                <a href="#business-books" class="main-part--sidebar--menu__item__link">business books</a>
+            </li>
+            <li class="main-part--sidebar--menu__item">
+                <a href="#genre-books" class="main-part--sidebar--menu__item__link">genre books</a>
+            </li>
+            <li class="main-part--sidebar--menu__item">
+                <a href="#fantasy-books" class="main-part--sidebar--menu__item__link">fantasy books</a>
+            </li>
+            <li class="main-part--sidebar--menu__item">
+                <a href="#customer-reviews" class="main-part--sidebar--menu__item__link">customer reviews</a>
+            </li>
+           <a href="#offers-books"class="btn btn-offer">
+              offers
+           </a>
+        </ul>
+     </nav>
+     </div>
+      <!-- hero part -->
+       <div class="main-part--hero-section">
+          <div class="main-part--hero-section--first">
+                <input type="text" name="search" id="search" class="form-control" placeholder="search the books here...">
+        <div class="main-part--hero-section--first__buttons">
+                <a href="#about-book" class="btn-about">
+                    about
+                </a>
+                <a href="#contact-us" class="btn-contactus">
+                    contact us
+                </a>
+        </div>
+          </div>
+         <div class="main-part--hero-section--second">
+         <div class="main-part--hero-section--second__img">
+            <img src="./assets/images/main-book.png" alt="main-book-img" class="img-auto">
+         </div>
+         <div class="main-part--hero-section--second__content">
+            <h2 class="main-part--hero-section--second__content__heading">welcome to <br>
+                <span class="logo-name">BookFabel space</span></h2>
+            <p class="main-part--hero-section--second__content__para">
+                "Discover a world of stories and knowledge at your fingertips. Whether you're seeking adventure, romance, or self-improvement, our carefully curated collection offers something for every reader."
+            </p>
+            <div class="main-part--hero-section--second__content__buttons">
+            <button class="btn-secondary">
+                explore now
+            </button>
+            <button class="btn-primary">
+                read our books
+            </button>
+            </div>
+            <div class="main-part--hero-section--second__content__socialicons">
+                <img src="./assets/images/social-icons/facebook icon.png" alt="facebook">
+                <img src="./assets/images/social-icons/instagram icon.png" alt="instagram">
+                <img src="./assets/images/social-icons/watsup icon.png" alt="watsup">
+                <img src="./assets/images/social-icons/linkdin icon.png" alt="linkedin">
+                <img src="./assets/images/social-icons/google icon.png" alt="google">
+            </div>
+         </div>
+       </div>
+       </div>
+</section>
+        <!-- end header with hero section -->
+        <!-- ========== Start supercollections ========== -->
+<section class="supercollectionbooks block" id="supercollectionbooks">
+    <h2 class="books-title">best books collections</h2>
+    <div class="supercollectionbooks-cards">
+        <!-- card1 -->
+        <div class="supercollectionbooks-cards--card">
+            <div class="supercollectionbooks-cards--card--img">
+                <img src="./assets/images/super-books/comedy book.jpeg" alt="super-collections-comedy-book" class="img-auto">
+            </div>
+            <div class="supercollectionbooks-cards--card--content">
+                <div class="supercollectionbooks-cards--card--content__first">
+                    <button class="btn-supercollection">
+                        comedy
+                    </button>
+                    <button class="btn-rating">
+                        <i class="fas fa-star"></i>
+                        <span>4.0</span>
+                    </button>
+                </div>
+                <div class="supercollectionbooks-cards--card--content__second">
+                    <h3 class="supercollectionbooks-cards--card--content__second__bookname">
+                        Archy Rescurrtion
+                    </h3>
+                    <h4 class="supercollectionbooks-cards--card--content__second__author">
+                        patrick McGEE
+                    </h4>
+                    <button class="btn-superprice">
+                        $24.95
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- card2 -->
+        <div class="supercollectionbooks-cards--card">
+            <div class="supercollectionbooks-cards--card--imgs">
+                <img src="./assets/images/super-books/drama book.jpg" alt="super-collections-drama-book" >
+            </div>
+            <div class="supercollectionbooks-cards--card--content">
+                <div class="supercollectionbooks-cards--card--content__first">
+                    <button class="btn-supercollection">
+                        drama
+                    </button>
+                    <button class="btn-rating">
+                        <i class="fas fa-star"></i>
+                        <span>4.6</span>
+                    </button>
+                </div>
+                <div class="supercollectionbooks-cards--card--content__second">
+                    <h3 class="supercollectionbooks-cards--card--content__second__bookname">
+                         drama queen
+                    </h3>
+                    <h4 class="supercollectionbooks-cards--card--content__second__author">
+                        lara bergen
+                    </h4>
+                    <button class="btn-superprice">
+                        $26.28
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- card 3 -->
+        <div class="supercollectionbooks-cards--card">
+            <div class="supercollectionbooks-cards--card--imgss">
+                <img src="./assets/images/super-books/romance book.png" alt="super-collections-romance-book">
+            </div>
+            <div class="supercollectionbooks-cards--card--content">
+                <div class="supercollectionbooks-cards--card--content__first">
+                    <button class="btn-supercollection">
+                        romance
+                    </button>
+                    <button class="btn-rating">
+                        <i class="fas fa-star"></i>
+                        <span>4.0</span>
+                    </button>
+                </div>
+                <div class="supercollectionbooks-cards--card--content__second">
+                    <h3 class="supercollectionbooks-cards--card--content__second__bookname">
+                         funny valentine
+                    </h3>
+                    <h4 class="supercollectionbooks-cards--card--content__second__author">
+                        caroline siler
+                    </h4>
+                    <button class="btn-superprice">
+                        $30.16
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+        <!-- ========== End supercollections ========== -->
+
+        <!-- ========== Start education and popular books banners ========== -->
+<section class="education-popular-banners block">
+    <!-- education-books banner -->
+<div class="education-banner">
+    <div class="education-banner-content">
+       <h4>collection of</h4>
+       <h2>education books</h2>
+       <button class="btn-banners">
+        shop now
+       </button>
+    </div>
+    <div class="education-banner-img">
+        <img src="./assets/images/banners/banner-img-education.png" alt="education-banner">
+    </div>
+</div>
+    <!-- popular-books banner -->
+    <div class="popular-banner">
+        <div class="popular-banner-content">
+           <h4>collection of</h4>
+           <h2>popular books</h2>
+           <button class="btn-banner">
+            shop now
+           </button>
+        </div>
+        <div class="popular-banner-img">
+            <img src="https://static.vecteezy.com/system/resources/previews/044/761/416/original/pile-of-books-isolated-png.png" alt="education-banner">
+        </div>
+    </div>
+</section>
+        <!-- ========== End education and popular books banners ========== -->
+
+        <!-- ========== Start education books========== -->
+<section class="education-books block" id="education-books">
+ <div class="education-books-head">
+   <h2 class="books-title">education books for you</h2>
+   <button class="btn-view">
+    view all
+   </button>
+ </div>
+ <div class="education-books-cards">
+    <!-- card1 -->
+    <div class="education-books-cards-card">
+        <div class="education-books-cards-card-img">
+            <img src="./assets/images/education-books/ui-ux book.png" alt="ui ux education book" class="img-auto">
+        </div>
+        <div class="education-books-cards-card-content">
+            <h3 class="book-name">UI/UX  strategy and designing</h3>
+            <p>by pamala and deacon</p>
+            <img src="./assets/images/other-pictures/book rating star.png" alt="blue-star-rating">
+            <div class="authors">
+                <img src="./assets/images/authors/author1.jpeg" alt="author-1">
+                <img src="./assets/images/authors/author2.jpeg" alt="author-1">
+                <div class="badge">+30</div>
+            </div>
+        </div>
+    </div>
+    <!-- card2 -->
+    <div class="education-books-cards-card1">
+        <div class="education-books-cards-card1-img one-img">
+            <img src="./assets/images/education-books/sql book.jpg" alt="sql education book" class="img-auto">
+        </div>
+        <div class="education-books-cards-card1-content">
+            <h3 class="book-name">SQL server and management</h3>
+            <p>by rose kevin e.kline</p>
+            <img src="./assets/images/other-pictures/book rating star.png" alt="blue-star-rating">
+            <div class="authors">
+                <img src="./assets/images/authors/author3.jpeg" alt="author-3">
+                <img src="./assets/images/authors/author4.jpeg" alt="author-4">
+                <div class="badge-primary">+40</div>
+            </div>
+        </div>
+    </div>
+     <!-- card3 -->
+     <div class="education-books-cards-card2">
+        <div class="education-books-cards-card2-img one-img">
+            <img src="./assets/images/education-books/web develop book.jpg" alt="web developement education book" class="img-auto">
+        </div>
+        <div class="education-books-cards-card2-content">
+            <h3 class="book-name">web coding and development</h3>
+            <p>by paul McFedries</p>
+            <img src="./assets/images/other-pictures/book rating star.png" alt="blue-star-rating">
+            <div class="authors">
+                <img src="./assets/images/authors/author1.jpeg" alt="author-5">
+                <img src="./assets/images/authors/author5.jpeg" alt="author-6">
+                <div class="badge-secondary">+55</div>
+            </div>
+        </div>
+    </div>
+ </div>
+ <div class="education-books-browse block">
+ <h3 class="browse-title">browse more books</h3>
+ <div class="education-books-browse-cards-authors">
+ <div class="education-books-browse-cards-authors-cards">
+    <div class="education-books-browse-cards-authors-cards-card">
+     <div class="education-books-browse-cards-authors-cards-card-img">
+        <img src="./assets/images/browse-books/browse-pink-book.png" alt="browse-pink-book">
+     </div>
+     <div class="education-books-browse-cards-authors-cards-card-content">
+      <h3>mexico cook book</h3>
+      <h4>by phaidon george</h4>
+      <img src="./assets/images/other-pictures/blue stars rating.png" alt="blue-star-rating">
+     </div>
+     </div>
+     <!-- card2 -->
+     <div class="education-books-browse-cards-authors-cards-card">
+        <div class="education-books-browse-cards-authors-cards-card-img">
+           <img src="./assets/images/browse-books/browse-yellow-book.png" alt="browse-pink-book">
+        </div>
+        <div class="education-books-browse-cards-authors-cards-card-content">
+         <h3>heidi</h3>
+         <h4>by johanna syri</h4>
+         <img src="./assets/images/other-pictures/blue stars rating.png" alt="blue-star-rating">
+        </div>
+        </div>
+ </div>
+ <div class="education-books-browse-cards-authors-authors">
+    <h3 class="browse-authors">authors</h3>
+    <li>
+        <img src="./assets/images/authors/author1.jpeg" alt="author-1">
+        <h4 class="author-name">pamala joe</h4>
+    </li>
+    <li>
+        <img src="./assets/images/authors/author2.jpeg" alt="author-2">
+        <h4 class="author-name">deacons</h4>
+    </li>
+    <li>
+        <img src="./assets/images/authors/author3.jpeg" alt="author-3">
+        <h4 class="author-name">paul rose</h4>
+    </li>
+    <li>
+        <img src="./assets/images/authors/author4.jpeg" alt="author-4">
+        <h4 class="author-name">EL.kevins</h4>
+    </li>
+    <li>
+        <img src="./assets/images/authors/author5.jpeg" alt="author-5">
+        <h4 class="author-name">McFedries</h4>
+    </li>
+ </div>
+ </div>
+ </div>
+</section>        
+        <!-- ========== End education books ========== -->
+        
+        <!-- ========== Start popular-books ========== -->
+<section class="popular-books block" id="popular-books">
+    <div class="popular-books-head">
+        <h2 class="books-title">you must read new release popular books!</h2>
+        <button class="btn-views">
+         see all
+        </button>
+    </div>
+    <div class="popular-books-cards">
+        <div class="popular-books-cards-card">
+            <img src="./assets/images/popular-books/action book.jpg" alt="popular-action-book">
+            <div class="content">
+                <h3 class="content-name">
+                    battle of labyrinth
+                </h3>
+                <h4 class="content-author">
+                    by rick riordern
+                </h4>
+                <p class="content-para">
+                    It is an american fantasy action novel based on greek myth.
+                </p>
+                <div class="content-pages">
+                    <span>192 pages</span>
+                    <span>chapter 13</span>
+                    <span>read</span>
+                </div>
+            </div>
+        </div>
+        <!-- card-2 -->
+        <div class="popular-books-cards-card1">
+            <img src="./assets/images/popular-books/musical book.jpg" alt="popular-music-book">
+            <div class="content">
+                <h3 class="content-name">
+                 music theory
+                </h3>
+                <h4 class="content-author">
+                    by nicolas carter
+                </h4>
+                <p class="content-para">
+                    This suits workbooks that corresponding to offers all around world.
+                </p>
+                <div class="content-pages">
+                    <span>203 pages</span>
+                    <span>chapter 10</span>
+                    <span>read</span>
+                </div>
+            </div>
+        </div>
+        <!-- card-3 -->
+        <div class="popular-books-cards-card2">
+            <img src="./assets/images/popular-books/horror book.jpg" alt="popular-horror-book">
+            <div class="content">
+                <h3 class="content-name">
+                 R.L. stine goosebumps
+                </h3>
+                <h4 class="content-author">
+                    by derren lamke
+                </h4>
+                <p class="content-para">
+                    Goosebumps is an american horror film directed by Rob Letterman.
+                </p>
+                <div class="content-pages">
+                    <span>356 pages</span>
+                    <span>chapter 3</span>
+                    <span>read</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+        <!-- ========== End popular-books ========== -->
+        
+        <!-- ========== Start offers books ========== -->
+<section class="offers-books block" id="offers-books">
+    <div class="offers-books-content">
+        <h2>flash sale <span class="flash-sub-title">for 2 books</span></h2>
+        <h3>-50%</h3>
+        <p>Explore with betseelers and new releases with amazing discounts. Dive into a world of stories at unbeatable prices-shop now before it's gone!</p>
+        <h4>hurry up, only 20 more books left!</h4>
+    </div>
+    <div class="offers-books-cards">
+     <div class="offers-books-cards-card">
+        <img src="./assets/images/offer-books/skyblue- book1.png" alt="offer-book-1">
+        <div class="offers-books-cards-card-content">
+            <div class="first">
+                <div class="badge-offer">
+                  Romance
+                </div>
+                <img src="./assets/images/other-pictures/book rating star.png" alt="book-rating-star">
+                <h4>(430)</h4>
+            </div>
+            <h2>get it together</h2>
+            <h3>kaitlyn davis</h3>
+            <div class="second">
+                <h1>$15.36</h1>
+                <h5>$30.63</h5>
+            </div>
+            <div class="third">
+            <div class="third-line"></div>
+            <div class="third-white"></div>
+            <div class="badge-cart"><i class="fas fa-shopping-basket"></i></div>
+            </div>
+            <p>2 books left!</p>
+     </div>
+    </div>
+    <!-- card2 -->
+    <div class="offers-books-cards-card">
+        <img src="./assets/images/fantasy-books/immersive book.jpg" alt="offer-book-2">
+        <div class="offers-books-cards-card-content">
+            <div class="first">
+                <div class="badge-offer">
+                  fantasy
+                </div>
+                <img src="./assets/images/other-pictures/book rating star.png" alt="book-rating-star">
+                <h4>(120)</h4>
+            </div>
+            <h2>immersive world</h2>
+            <h3>hendry thomas</h3>
+            <div class="second">
+                <h1>$26.84</h1>
+                <h5>$13.42</h5>
+            </div>
+            <div class="third">
+            <div class="third-line"></div>
+            <div class="third-white"></div>
+            <div class="badge-cart"><i class="fas fa-shopping-basket"></i></div>
+            </div>
+            <p>65 books left!</p>
+     </div>
+    </div>
+</section>       
+        <!-- ========== End offers books ========== -->
+
+        <!-- ========== Start business and genre books banner ========== -->
+<section class="business-genre-banners block">
+            <!-- business-books banner -->
+        <div class="business-banner">
+            <div class="business-banner-content">
+               <h4>the month of</h4>
+               <h2>business books</h2>
+               <button class="btn-bannerss">
+                shop now
+               </button>
+            </div>
+            <div class="business-banner-img">
+                <img src="./assets/images/banners/business-banner.png" alt="business-banner">
+            </div>
+        </div>
+            <!-- genre-books banner -->
+            <div class="genre-banner">
+                <div class="genre-banner-content">
+                   <h4>the good book</h4>
+                   <h2>genre books</h2>
+                   <button class="btn-banner">
+                    shop now
+                   </button>
+                </div>
+                <div class="genre-banner-img">
+                    <img src="./assets/images/banners/genre--banner.png" alt="genre-banner">
+                </div>
+            </div>
+</section>    
+        <!-- ========== End business and genre books banner ========== -->
+
+        <!-- ========== Start fantasy-books ========== -->
+<section class="fantasy-books block" id="fantasy-books">
+    <div class="fantasy-books-head">
+        <h2 class="books-title">exclusive fantasy books</h2>
+        <button class="btn-viewss">
+         view all
+        </button>
+      </div> 
+      <div class="fantasy-books-cards">
+        <!-- card1 -->
+        <div class="fantasy-books-cards-card">
+          <div class="fantasy-books-cards-card-img ">
+            <img src="./assets/images/fantasy-books/fantasy-img-1.png" class="img-auto" alt="fantasy-immersive-book">
+          </div>
+          <div class="fantasy-books-cards-card-content">
+            <div class="first">
+                <div class="badge-offers">
+                  immersive
+                </div>
+                <img src="./assets/images/other-pictures/blue stars rating.png" alt="book-rating-star">
+                <h4>467 Reviews</h4>
+            </div>
+            <h3 class="book-name">jonathan's eterna empire</h3>
+            <p>It's compelling stories with larger than life characters, but mostly mum and dad's books..</p>
+            <div class="second">
+                <h1>$18.14</h1>
+                <h5>$36.7</h5>
+            </div>
+            <div class="buttons">
+                <button class="btn-fantasy">
+                    <i class="fas fa-shopping-basket"></i>
+                    add to cart
+                </button>
+                <button class="btn-heart">
+                    <i class="fas fa-heart" style="color: #ff0019;"></i>
+                </button>
+                <h5><a href="#fantasy-view-book" class="detail-color">view details</a></h5>
+            </div>
+          </div>
+        </div> 
+        <!-- card2 -->
+        <div class="fantasy-books-cards-card">
+            <div class="fantasy-books-cards-card-img ">
+              <img src="./assets/images/fantasy-books/fantasy-img-3.png" class="img-auto" alt="fantasy-immersive-book">
+            </div>
+            <div class="fantasy-books-cards-card-content">
+              <div class="first">
+                  <div class="badge-offers">
+                    fantasy
+                  </div>
+                  <img src="./assets/images/other-pictures/blue stars rating.png" alt="book-rating-star">
+                  <h4>568 Reviews</h4>
+              </div>
+              <h3 class="book-name">the earth family smith</h3>
+              <p>It's compelling stories with larger than life characters, but mostly mum and dad's books..</p>
+              <div class="second">
+                  <h1>$12.9</h1>
+                  <h5>$24.18</h5>
+              </div>
+              <div class="buttons">
+                  <button class="btn-fantasy">
+                      <i class="fas fa-shopping-basket"></i>
+                      add to cart
+                  </button>
+                  <button class="btn-heart">
+                      <i class="fas fa-heart" style="color: #ff0019;"></i>
+                  </button>
+                  <h5><a href="#fantasy-view-book" class="detail-color">view details</a></h5>
+              </div>
+            </div>
+          </div>
+      </div> 
+</section>       
+        <!-- ========== End fantasy-books ========== -->
+
+        <!-- ========== Start business books ========== -->
+<section class="business-books block" id="business-books">
+    <div class="business-books-head">
+        <h2 class="books-title">top rated business books</h2>
+        <button class="btn-view">
+         see all
+        </button>
+      </div> 
+      <div class="business-books-cards">
+        <!-- card1 -->
+       <div class="business-books-cards-card">
+        <div class="business-books-cards-card-img">
+            <img src="./assets/images/business-books/business-email-book-1.jpg" alt="business-email-book">
+        </div>
+        <div class="business-books-cards-card-content">
+            <img src="./assets/images/other-pictures/book rating star.png" alt="rating star">
+            <h3>email marketing</h3>
+            <h4>mue tsun</h4>
+            <div class="box">
+                <div class="left">
+                    <h2>$16.82</h2>
+                    <h3>$32.41</h3>
+                </div>
+                <div class="badge-cart"><i class="fas fa-shopping-basket"></i></div>
+            </div>
+        </div>
+      </div>
+      <!-- card2 -->
+      <div class="business-books-cards-card">
+        <div class="business-books-cards-card-img">
+            <img src="./assets/images/business-books/business-magnificent-book-3.jpg" alt="business-email-book">
+        </div>
+        <div class="business-books-cards-card-content">
+            <img src="./assets/images/other-pictures/book rating star.png" alt="rating star">
+            <h3>magni marketing</h3>
+            <h4>donna stone</h4>
+            <div class="box">
+                <div class="left">
+                    <h2>$20.8</h2>
+                    <h3>$40.16</h3>
+                </div>
+                <div class="badge-cart"><i class="fas fa-shopping-basket"></i></div>
+            </div>
+        </div>
+      </div>
+      <!-- card3 -->
+      <div class="business-books-cards-card">
+        <div class="business-books-cards-card-img">
+            <img src="./assets/images/business-books/business-fuel-book.png" alt="business-fuel-book">
+        </div>
+        <div class="business-books-cards-card-content">
+            <img src="./assets/images/other-pictures/book rating star.png" alt="rating star">
+            <h3>sales marketing</h3>
+            <h4>alex domas</h4>
+            <div class="box">
+                <div class="left">
+                    <h2>$16.82</h2>
+                    <h3>$32.41</h3>
+                </div>
+                <div class="badge-cart"><i class="fas fa-shopping-basket"></i></div>
+            </div>
+        </div>
+      </div>
+      <!-- card4 -->
+      <div class="business-books-cards-card">
+        <div class="business-books-cards-card-img">
+            <img src="./assets/images/business-books/business-marketing-book.png" alt="business-marketing-book">
+        </div>
+        <div class="business-books-cards-card-content">
+            <img src="./assets/images/other-pictures/book rating star.png" alt="rating star">
+            <h3>small marketing</h3>
+            <h4>lolita</h4>
+            <div class="box">
+                <div class="left">
+                    <h2>$15.5</h2>
+                    <h3>$30.10</h3>
+                </div>
+                <div class="badge-cart"><i class="fas fa-shopping-basket"></i></div>
+            </div>
+        </div>
+      </div>
+</section>     
+        <!-- ========== End business books ========== -->
+        
+
+        <!-- ========== Start genre books ========== -->
+<section class="genre-books block" id="genre-books">
+    <div class="genre-books-head">
+        <h2 class="books-title">latest genre book items</h2>
+        <button class="btn-views">
+         view all
+        </button>
+      </div> 
+      <div class="genre-books-intro">
+      <h2>2024 year most popular genre bestsellers</h2>
+      <p>List of the most interesting books of the year based on customers and critics reviews</p>
+      </div>
+      <div class="genre-books-cards">
+        <div class="genre-books-cards-card genre-card">
+            <div class="genre-books-cards-card-img">
+                <img src="./assets/images/genere-books/game book.jpg" alt="genre-game-1-book">
+            </div>
+             <div class="genre-books-cards-card-content">
+                <h3>no cat in an island</h3>
+                <h4>by james crumbly</h4>
+                <img src="./assets/images/other-pictures/book rating star.png" alt="book-rating-star">
+                <p>Mystery is a fiction genre, where the nature of event usually crimes remains end of story.</p>
+            </div>
+        </div>
+        <!-- card 2 -->
+        <div class="genre-books-cards-card genre-card-1">
+            <div class="genre-books-cards-card-img">
+                <img src="./assets/images/genere-books/adventure book.jpg" alt="genre-adventure-book">
+            </div>
+             <div class="genre-books-cards-card-content">
+                <h3>the explorer</h3>
+                <h4>by E.Czerneda</h4>
+                <img src="./assets/images/other-pictures/book rating star.png" alt="book-rating-star">
+                <p>Fiction that novably war novels,crime novels,sea stories, spy stories that contains.</p>
+            </div>
+        </div>
+         <!-- card 3 -->
+         <div class="genre-books-cards-card genre-card-2">
+            <div class="genre-books-cards-card-img">
+                <img src="./assets/images/genere-books/game-1 book.jpg" alt="genre-game-1-book">
+            </div>
+             <div class="genre-books-cards-card-content">
+                <h3>war grypthon</h3>
+                <h4>by suzane collins</h4>
+                <img src="./assets/images/other-pictures/book rating star.png" alt="book-rating-star">
+                <p>Gamebook is work of printed fiction that allows reader to participate in story choices.</p>
+            </div>
+        </div>
+      </div>
+    </section>       
+        <!-- ========== End genre books ========== -->
+
+        <!-- ========== Start about us ========== -->
+<section class="about-book block" id="about-book">
+  <div class="about-book-content">
+    <h1>about <br>our bookFabel space</h1>
+    <p>BookFabel Space is  designed to provide online reading for book lovers. With its clean interface and user-friendly navigation, easily discover and enjoy their favorite titles.</p>
+  </div>
+  <div class="about-book-card">
+  <img src="./assets/images/other-pictures/about-book-img.png" alt="about-book-img">
+  <div class="sub-card">
+    <h2>the <br>bookFabel space</h2>
+    <div class="sub-card-services">
+        <div class="customers">
+            <h5><i class="fas fa-users" style="color: #f0008c;"></i><span>35,000</span></h5>
+            <h4>our happy customers</h4>
+        </div>
+        <div class="book-collections">
+            <h5><i class="fas fa-book" style="color: #eb0089;"></i><span>+68 books</span></h5>
+            <h4>book collections</h4>
+        </div>
+    </div>
+  </div>
+  </div>
+</section>      
+        <!-- ========== End about us ========== -->
+
+        <!-- ========== Start view-detail fantasy book ========== -->
+<section class="fantasy-view-book block" id="fantasy-view-book">
+ <div class="fantasy-view-book-img">
+    <img src="./assets/images/fantasy-books/fantasy-img-3.png" alt="fantasy-smith-book">
+ </div> 
+ <div class="fantasy-view-book-content">
+     <h3>fantasy book:</h3>
+    <h2>the earth family smith</h2>
+    <h4>by author of Chun-Tien-Leung</h4>
+    <div class="rating">
+        <img src="./assets/images/other-pictures/blue stars rating.png" alt="blue rating star">
+        <span>4.6 (299 Ratings, 66 comments)</span>
+    </div>
+    <div class="specify">
+        <h5>paperback</h5>
+        <h6>english</h6>
+    </div>
+    <div class="social-icons">
+        <img src="./assets/images/social-icons/facebook footer.png" alt="facebook">
+        <img src="./assets/images/social-icons/instagram footer.png" alt="instagram">
+        <img src="./assets/images/social-icons/twitter footer.png" alt="twitter">
+        <img src="./assets/images/social-icons/watsup footer.png" alt="watsup">
+    </div>
+    <h5 class="special">this year no.1 best seller</h5>
+    <p>Cameron is a teenage girl who, along with her family is fleeing a climate change-ravaged Earth. The Smith family are on their way to a new planet for colonization. But the three Smith children get separated from their parents, and crash land on an alien world. They are... <a href="#fantasy-books">Read more</a></p>
+    
+    <div class="other-details">
+        <div class="other-details-left">
+            <li>language : english</li>
+            <li>quality : paperback</li>
+            <li>size/pages :A3 436</li>
+        </div>
+        <div class="other-details-right">
+            <li>publisher : bookFabel space ltd</li>
+            <li>publish date : 2024/08</li>
+            <li>ISAN :987GFDSA654MNB</li>
+        </div>
+    </div>
+ </div> 
+ <div class="fantasy-view-book-card">
+    <div class="online-price">
+        <h3>$20.67</h3>
+        <h5>online</h5>
+    </div>
+    <div class="member-price">
+        <h3>$14.38</h3>
+        <h5>member</h5>
+    </div>
+    <div class="order">
+        <h4><i class="fas fa-tag" style="color: #6956c8;"></i><span>3% free on order above $30</span></h4>
+        <h4><i class="fas fa-check-circle" style="color: #6956c8;"></i><span>available, dispatch in 3 days</span></h4>
+        <h4><i class="fas fa-store" style="color: #6956c8;"></i><span>available at all outlets</span></h4>
+    </div>
+    <div class="view-books-buttons">
+        <button class="btn-view-add-cart">add to cart</button>
+        <button class="btn-view-wishlist">add to wishlist</button>
+    </div>
+ </div>
+</section> 
+        <!-- ========== End view-detail fantasy book ========== -->
+
+        <!-- ========== Start customer-reviews ========== -->
+<section class="customer-reviews block">
+  <div class="customer-reviews-content">
+    <h1>what people thinks and say about our
+        bookFabel space &#128525;</h1>
+    <p>Customer reviews on a book website offer valuable insights, helping readers make informed decisions provide diverse opinions on content, quality, relevance of the book</p>
+  </div>
+  <div class="customer-reviews-image">
+    <img src="./assets/images/customer-bg/customer-bg-img-2.jpeg" alt="">
+  </div>
+     <div class="customer-reviews-card">
+    <img src="./assets/images/other-pictures/book rating star.png" alt="book-rating-star"> 
+    <p class="customer-review">"The reviews from other readers helped me to choose my next favourite book!"</p>
+    <h5 class="customer-name">alexander</h5>
+    <div class="customer-img">
+        <img src="./assets/images/authors/author3.jpeg" alt="customer-img-1">
+     </div>
+    </div>
+    <div class="customer-reviews-card-1">
+        <img src="./assets/images/other-pictures/book rating star.png" alt="book-rating-star"> 
+       <p class="customer-review">"Wish they offered more e-book options alongside physical copies".</p> 
+       <h5 class="customer-name">dev markie</h5>
+       <div class="customer-img">
+       <img src="./assets/images/authors/author5.jpeg" alt="customer-img-2">
+    </div>
+    </div>
+</section>        
+        <!-- ========== End customer-reviews ========== -->       
+        
+ <!-- ========== Start contactus ========== -->
+<section class="contact-us block" id="contact-us">
+    <div class="contact-us-right">
+        <img src="./assets/images/contactimg/contact-us-img-1.png" alt="contact-us-img" class="img-auto">
+    </div>
+<div class="contact-us-left">
+    <h3>send a message to us!</h3>
+    <h4>we will contact you quickly &#128526;</h4>
+    <div class="form">
+        <div class="name">
+           <input type="name" class="form-control" name="name" placeholder="Your Name">
+        </div>
+        <div class="email">
+            <input type="email" class="form-control" name="email" placeholder="Email Address">
+         </div>
+         <div class="textarea">
+            <textarea name="textarea" type="text" id="textarea" class="form-control" rows="6">
+                contact here!...
+            </textarea>
+         </div>
+         <input type="submit" value="Send a message" class="btn-submit">
+    </div>
+</div>
+</section>        
+ 
+
+        <!-- ========== End contactus ========== -->
+ 
+        <!-- ========== Start back to top btn ========== -->
+   <!--back to top btn-->
+   <button id="back-to-top" class="back-to-top-circle">
+    <i class="fas fa-angle-double-up" style="font-size:16px;"></i>
+   </button>
+  <!-- end back to top btn-->     
+        <!-- ========== End back to top btn ========== -->
+        
+        <!-- ========== Start footer ========== -->
+<section class="footer block" id="footer">
+    <div class="footer-sub-first">
+       <div class="footer-sub-first--logo">
+        <img src="./assets/images/books-logos/main-logo.png" alt="book-logo">
+        <h2>bookFabel Space</h2>
+       </div>
+       <h6>"Discover a world of stories and knowledge at your fingertips. Whether you're seeking adventure, romance, or self-improvement, our carefully curated collection offers something for every reader."</h6>
+       <h3>follow us on</h3>
+       <div class="footer-sub-first-social-icons">
+         <img src="./assets/images/social-icons/facebook footer.png" alt="facebook-footer-icon">
+         <img src="./assets/images/social-icons/instagram footer.png" alt="instagram-footer-icon">
+         <img src="./assets/images/social-icons/twitter footer.png" alt="twitter-footer-icon">
+         <img src="./assets/images/social-icons/watsup footer.png" alt="watsup-footer-icon">
+         <img src="./assets/images/social-icons/linkedin footer.png" alt="linkedin-footer-icon">
+       </div>
+       </div>
+    <div class="footer-sub-second">
+     <h3>quick links</h3>
+     <ul class="footer-sub-second-menu">
+        <li class="footer-sub-second-menu__item">
+            <a href="" class="footer-sub-second-menu__item__link">education</a>
+        </li>
+        <li class="footer-sub-second-menu__item">
+            <a href="" class="footer-sub-second-menu__item__link">supercollection</a>
+        </li>
+        <li class="footer-sub-second-menu__item">
+            <a href="" class="footer-sub-second-menu__item__link">popular books</a>
+        </li>
+        <li class="footer-sub-second-menu__item">
+            <a href="" class="footer-sub-second-menu__item__link">business books</a>
+        </li>
+        <li class="footer-sub-second-menu__item">
+            <a href="" class="footer-sub-second-menu__item__link">genre books</a>
+        </li>
+        <li class="footer-sub-second-menu__item">
+            <a href="" class="footer-sub-second-menu__item__link">fantasy books</a>
+        </li>
+        <li class="footer-sub-second-menu__item">
+            <a href="" class="footer-sub-second-menu__item__link">offers</a>
+        </li>
+     </ul>
+    </div>
+    <div class="footer-sub-third">
+     <h3>our links</h3>
+     <a href="#about-book" class="btn-about">
+        about us
+    </a>
+    <a href="#contact-us" class="btn-contactus">
+        contact us
+    </a>
+    <a href="" class="customer-footer">customer-reviews</a>
+    </div>
+    <div class="footer-sub-fourth">
+     <h3>don't miss our books</h3>
+     <h6>Explore our best popular and super collection books at our official store. Enjoy it!
+     </h6>
+     <div class="footer-sub-fourth__buttons">
+        <input type="email" name="email" id="email" class="form-control" placeholder="Email address">
+        <input type="submit" value="Subscribe" class="forms-control">
+</div>
+    </div>
+</section>      
+        <!-- ========== End footer ========== -->
+        
+
+
+        
+  <script src="./assets/js/script.js"></script>      
+        
+</body>
+</html>
