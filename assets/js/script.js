@@ -18,5 +18,4 @@ function userScroll(){
     //eventlistener
     document.addEventListener('DOMContentLoaded', userScroll);
     document.querySelector('#back-to-top'), addEventListener('click',scrollToTop);
-    //prvent the back to top function from interfering with carousel buttons
     
